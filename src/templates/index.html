@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#047857" />
+    <meta
+      name="description"
+      content="Hier Restaurant adalah Restaurant terenak di Indonesia yang bikin pelanggan senang"
+    />
+    <title>Hier restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./app.webmanifest" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section id="loading">
+      <indicator-loading></indicator-loading>
+    </section>
+    <header>
+      <nav-bar></nav-bar>
+    </header>
+    <main id="mainContent" tabindex="-1"></main>
+    <footer-bar></footer-bar>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDIHFB6kUFN1AFIxNa2dAYFmrw7khAdz5I",
+        authDomain: "hier-restaurant.firebaseapp.com",
+        databaseURL:
+          "https://hier-restaurant-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "hier-restaurant",
+        storageBucket: "hier-restaurant.appspot.com",
+        messagingSenderId: "690879756428",
+        appId: "1:690879756428:web:efa9af67a118dc716f63a9",
+        measurementId: "G-G0FTBS5DFJ",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
